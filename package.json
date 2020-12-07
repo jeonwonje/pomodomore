@@ -1,0 +1,17 @@
+{
+	"name": "pomodomore",
+	"version": "1.0.0",
+	"description": "Pomodoro timer app",
+	"main": "index.js",
+	"scripts": {
+		"build": "tailwind build src/style.css -o style.css",
+		"build:dev": "tailwind build src/style.css -o src/style.dev.css"
+	},
+	"keywords": [],
+	"author": "Jeon Wonje",
+	"license": "MIT",
+	"dependencies": {
+		"progressbar.js": "^1.1.0",
+		"tailwindcss": "^1.9.6"
+	}
+}

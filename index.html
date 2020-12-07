@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="./img/tomato.png">
+	<link rel="stylesheet" href="./src/style.dev.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+	<title>pomodomore</title>
+	<style>
+		body {
+			font-family: Montserrat, Verdana, sans-serif;
+		}
+
+		button:active {
+			border-color: #1a202c;
+			transform: translateY(4px);
+		}
+
+		#timer {
+			width: 325px;
+			position: relative;
+		}
+	</style>
+</head>
+
+<body class="bg-gray-800 text-center">
+	<h1 class="text-center text-5xl font-medium py-12"><strong><span class="text-red-200">pomo</span><span
+				class="text-white">do</span><span class="text-red-600">more</span></strong>
+	</h1>
+	<div id="timer" class="inline-block">
+		<!-- timer wheel will go here -->
+	</div>
+	<br> <br> <br>
+	<button id="start-btn" class="rounded-full text-xl bg-teal-400 h-10 w-24 border-b-4 border-gray-600 mb-4 mx-4"
+		onclick="resetTimer('start')" ontouchstart="">Work</button>
+	<button id="resume-btn"
+		class="hidden rounded-full text-xl bg-teal-400 h-10 w-24 border-b-4 border-gray-600 mb-4 mx-4"
+		onclick="resetTimer('resume')" ontouchstart="">Resume</button>
+	<button id="pause-btn"
+		class="hidden rounded-full text-xl bg-teal-400 h-10 w-24 border-b-4 border-gray-600 mb-4 mx-4"
+		onclick="resetTimer('pause')" ontouchstart="">Pause</button>
+	<button id="reset-btn"
+		class="hidden rounded-full text-xl bg-teal-400 h-10 w-24 border-b-4 border-gray-600 mb-4 mx-4"
+		onclick="resetTimer('reset')" ontouchstart="">Reset</button>
+
+	<button id="break-resume"
+		class="hidden rounded-full text-xl bg-teal-400 h-10 w-24 border-b-4 border-gray-600 mb-4 mx-4"
+		onclick="resetTimer('breakResume')" ontouchstart="">Resume</button>
+	<button id="break-pause"
+		class="hidden rounded-full text-xl bg-teal-400 h-10 w-24 border-b-4 border-gray-600 mb-4 mx-4"
+		onclick="resetTimer('breakPause')" ontouchstart="">Pause</button>
+	<button id="break-reset"
+		class="hidden rounded-full text-xl bg-teal-400 h-10 w-24 border-b-4 border-gray-600 mb-4 mx-4"
+		onclick="resetTimer('breakReset')" ontouchstart="">Reset</button>
+
+	<br>
+	<button id="short-btn" class="rounded-full text-xl bg-yellow-600 h-10 w-40 border-b-4 border-gray-700 mx-4"
+		onclick="resetTimer('short-break')" ontouchstart="">Short Break</button>
+	<button id="long-btn" class="rounded-full text-xl bg-blue-400 h-10 w-40 border-b-4 border-gray-700 mx-4"
+		onclick="resetTimer('long-break')" ontouchstart="">Long Break</button>
+<br>
+	<textarea name="textarea" id="textarea" cols="60" rows="10" placeholder="Use me as a Todo list / Take notes!
+
+Your text is automatically saved." class="rounded-lg bg-gray-900 text-white p-4 mt-16"></textarea>
+
+	<div id="pomodoro" class="text-white text-left mt-12 mx-8 sm:mx-24 xl:mx-64">
+		<h2 class="text-xl"><strong><u>What is the pomodoro technique?</u></strong></h2>
+
+		<br>
+
+		<h3 class="leading-8">The pomodoro technique is a time management method developed by Francesco Cirillo in the
+			late 1980s. <br>
+			It uses a timer, usually set to 25/30 minutes, followed by 5 minute breaks in between. <br>
+			Each work-break interval is known as a <i>pomodoro</i>, Italian for 'tomato'. <br>
+		</h3>
+
+		<br>
+
+		<h2 class="text-xl"><strong><u>How do I use this?</u></strong></h2>
+
+		<br>
+
+		<h3 class="leading-8">According to <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique#Description"
+				target="_blank" rel="noopener noreferrer"><u>Wikipedia</u></a>,
+			<ol>
+				<li>1. Decide on the task to be done.</li>
+				<li>2. Set the pomodoro timer (traditionally to 25 minutes).</li>
+				<li>3. Work on the task.</li>
+				<li>4. End work when the timer rings and put a checkmark on a piece of paper.</li>
+				<li>5. If you have fewer than four checkmarks, take a short break (3–5 minutes) and then return to step
+					2;
+					otherwise continue to step 6.</li>
+				<li>6. After four pomodoros, take a longer break (15–30 minutes), reset your checkmark count to
+					zero, then go to step 1.</li>
+			</ol>
+		</h3>
+	</div>
+	<script src="https://cdn.tutorialjinni.com/progressbar.js/1.1.0/progressbar.min.js"></script>
+	<script src="main.js"></script>
+</body>
+
+</html>
