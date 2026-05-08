@@ -4,8 +4,7 @@ A Pomodoro-technique timer in the browser, with a built-in notepad that auto-sav
 
 **Live demo:** https://jeonwonje.github.io/pomodomore/
 
-<!-- TODO: add screenshot.png to img/ and reference it here -->
-<!-- ![Screenshot](img/screenshot.png) -->
+![Screenshot](pomodomore.png)
 
 ## Features
 
